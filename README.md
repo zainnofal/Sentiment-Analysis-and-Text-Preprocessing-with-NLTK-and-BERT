@@ -1,5 +1,6 @@
 # Sentiment-Analysis-and-Text-Preprocessing-with-NLTK-and-BERT
-This project involves performing sentiment analysis on a dataset of tweets using a combination of natural language processing (NLP) techniques and machine learning models. The key components include:
+This project involves performing sentiment analysis on a dataset of tweets using a combination of natural language processing (NLP) techniques and machine learning models.
+The dataset, tweet_emotions.csv, includes tweet text and associated sentiment labels. The key components include:
 
 Text Preprocessing: Utilizing NLTK for tokenization, stopword removal, stemming, and cleaning of text data.
 
