@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis Web App</h1>
+        <form method="post" action="/predict">
+            <label for="text">Enter text:</label>
+            <textarea id="text" name="text" rows="4" cols="50"></textarea>
+            <br>
+            <button type="submit" name="prediction_method" value="MultinomialNB">Predict using MultinomialNB</button>
+            <button type="submit" name="prediction_method" value="BERT">Predict using BERT</button>
+        </form>
+
+        {% if prediction %}
+            <h2>Sentiment Prediction:</h2>
+            <p>{{ prediction }}</p>
+            <h2>Entered Text:</h2>
+            <p>{{ text }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
