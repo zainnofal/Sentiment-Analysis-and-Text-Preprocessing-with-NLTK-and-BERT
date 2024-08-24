@@ -1,15 +1,24 @@
-# Sentiment-Analysis-and-Text-Preprocessing-with-NLTK-and-BERT
-This project involves performing sentiment analysis on a dataset of tweets using a combination of natural language processing (NLP) techniques and machine learning models.
-The dataset, tweet_emotions.csv, includes tweet text and associated sentiment labels. The key components include:
+Sentiment Analysis and Text Preprocessing with NLTK, BERT, and Flask
+This project performs sentiment analysis on a dataset of tweets (tweet_emotions.csv) using a mix of NLP techniques and machine learning models, and includes deployment with Flask.
 
-Text Preprocessing: Utilizing NLTK for tokenization, stopword removal, stemming, and cleaning of text data.
+Key Components:
 
-Data Visualization: Generating word clouds and bar plots to visualize the most common words in the dataset.
+Text Preprocessing: Utilizes NLTK for tokenization, stopword removal, and stemming to clean and prepare tweet text.
 
-Logistic Regression Model: Building and training a logistic regression model using TF-IDF vectorization to classify tweet sentiments.
+Data Visualization: Creates word clouds and bar plots to visualize frequent words and insights from the preprocessed text.
 
-BERT-based Model: Implementing a fine-tuned DistilBERT model for sequence classification, providing an advanced approach to sentiment prediction.
+Logistic Regression Model: Builds and trains a logistic regression model with TF-IDF vectorization for sentiment classification.
 
-Model Persistence: Saving the trained models for future use with joblib.
+BERT-based Model: Employs a fine-tuned DistilBERT model for advanced sentiment prediction.
 
-The project showcases various techniques for preparing, visualizing, and analyzing textual data, as well as implementing traditional and transformer-based models for sentiment classification.
+Model Persistence: Saves trained models using joblib for future use.
+
+Flask Deployment: Deploys the sentiment analysis functionality as a web service using Flask, enabling real-time predictions via a web interface.
+
+This project integrates text processing, visualization, advanced sentiment analysis, and web deployment, providing a complete solution for analyzing and predicting tweet sentiments.
+
+
+
+
+
+
